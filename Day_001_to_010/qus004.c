@@ -35,7 +35,7 @@ int maxProfit(int* prices, int pricesSize) {
     int minPrice = INT_MAX;
     int maxProfit = 0;
 
-    for(int i = 0; i < pricesSize; i++) {
+    for(int i = 0; i < pricesSize; i+=1) {
         if(prices[i] < minPrice) {
             minPrice = prices[i];
         }
@@ -56,7 +56,7 @@ int main() {
     int prices[n];
 
     printf("Enter stock prices:\n");
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i+=1) {
         scanf("%d", &prices[i]);
     }
 
@@ -66,3 +66,4 @@ int main() {
 
     return 0;
 }
+
